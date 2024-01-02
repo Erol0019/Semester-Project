@@ -64,7 +64,7 @@ async def test_create_place_name_taken(
         (10.1, status.HTTP_400_BAD_REQUEST),
         (10.0, status.HTTP_400_BAD_REQUEST),
         # No overlap
-        (9.99, status.HTTP_201_CREATED),
+        (10.99, status.HTTP_201_CREATED),
         (9.98, status.HTTP_201_CREATED),
     ],
 )
