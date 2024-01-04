@@ -4,7 +4,7 @@ from uuid import uuid4
 from rpg_api.utils import dtos
 from typing import Any
 
-#checks if baseClassDTO returns the right value
+
 def test_base_class_dto_valid_input() -> None:
     """Test base class dto, with valid input."""
     valid_id = uuid4()
@@ -34,7 +34,6 @@ def test_base_class_dto_valid_input() -> None:
         "123e4567-e89b-12d3-a456-42661417400z",  # Non-hex character at the end
     ],
 )
-#this make the test run with different invalid ids and expect a validationError
 def test_base_class_dto_invalid_id(invalid_id: Any) -> None:
     """
     Test base class raises ValidationError, if id is not the correct format or type.
